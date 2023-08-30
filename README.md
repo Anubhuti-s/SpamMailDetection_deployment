@@ -1,1 +1,1 @@
-# SpamMail_2
+# Spam_Email_Detection
