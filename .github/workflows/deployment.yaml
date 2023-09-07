@@ -26,8 +26,12 @@ spec:
       labels:
         app: flask-test-app
     spec:
-    containers:
+      containers:
       - name: flask-test-app
         image: geoiq_emailspamdetection
         ports:
         - containerPort: 5000
+        resources:
+          limits:
+            memory: "256Mi" # Set a memory limit
+            cpu: "0.5"      # Set a CPU limit
