@@ -29,6 +29,6 @@ spec:
       containers:
       - name: flask-test-app
       image: geoiq_emailspamdetection
-      imagePullPolicy: Always
+      imagePullPolicy: IfNotPresent
       ports:
       - containerPort: 5000
