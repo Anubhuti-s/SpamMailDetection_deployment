@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: flask-test-app
-        image: geoiq_emailspamdetection
+        image: minikube
         ports:
         - containerPort: 5000
         resources:
