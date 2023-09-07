@@ -26,7 +26,7 @@ spec:
       labels:
         app: flask-test-app
     spec:
-      containers:
+    containers:
       - name: flask-test-app
         image: geoiq_emailspamdetection
         ports:
