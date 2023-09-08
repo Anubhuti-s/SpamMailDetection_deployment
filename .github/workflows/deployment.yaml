@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: flask-test-app
-        image: minikube
+        image: gcr.io/k8s-minikube/kicbase:v0.0.40
         ports:
         - containerPort: 5000
         resources:
