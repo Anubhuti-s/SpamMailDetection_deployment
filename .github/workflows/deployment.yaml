@@ -32,6 +32,9 @@ spec:
         ports:
         - containerPort: 5000
         resources:
+          requests:
+            cpu: "0.5"   # Request 0.5 CPU cores
+            memory: "256Mi"  # Request 256 MiB of memory
           limits:
-            memory: "300Mi" # Set a memory limit
-            cpu: "0.75"      # Set a CPU limit
+            cpu: "1"  # Limit to 1 CPU core
+            memory: "512Mi"  # Limit to 512 MiB of memory
