@@ -36,5 +36,5 @@ spec:
             cpu: "0.5"   # Request 0.5 CPU cores
             memory: "256Mi"  # Request 256 MiB of memory
           limits:
-            cpu: "1"  # Limit to 1 CPU core
+            cpu: "4"  # Limit to 4 CPU core
             memory: "512Mi"  # Limit to 512 MiB of memory
