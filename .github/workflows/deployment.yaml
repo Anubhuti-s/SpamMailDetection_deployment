@@ -34,25 +34,4 @@ spec:
         resources:
           limits:
             memory: "300Mi" # Set a memory limit
-            cpu: "0.5"      # Set a CPU limit
-
----
-# Horizontal Pod Autoscaler (HPA)
-apiVersion: autoscaling/v2beta2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: flask-test-app-hpa
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: flask-test-app
-  minReplicas: 2  # Minimum number of replicas
-  maxReplicas: 10  # Maximum number of replicas
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 50  # Target average CPU utilization (adjust as needed)
+            cpu: "0.75"      # Set a CPU limit
