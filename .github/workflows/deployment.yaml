@@ -33,8 +33,8 @@ spec:
         - containerPort: 5000
         resources:
           requests:
-            cpu: "0.5"   # Request 0.5 CPU cores
-            memory: "256Mi"  # Request 256 MiB of memory
+            cpu: "4"   # Request 0.5 CPU cores
+            memory: "456Mi"  # Request 256 MiB of memory
           limits:
             cpu: "5"  # Limit to 4 CPU core
             memory: "600Mi"  # Limit to 512 MiB of memory
